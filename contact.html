@@ -3,160 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Elite Events</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Us | Jashmiraaj Ventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0D1230',
+                        gold: '#C8A46A',
+                        beige: '#D9BE8B',
+                        softWhite: '#F8F8F8',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-softWhite">
 
-    <!-- Navigation -->
-    <nav class="scrolled">
-        <div class="container">
-            <a href="index.html" class="logo">ELITE EVENTS</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html" class="active">Contact</a>
+    <!-- Header -->
+    <header id="main-header" class="scrolled">
+        <div class="container flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAAJ</a>
             </div>
-            <div class="mobile-toggle">
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active text-gold">Contact</a>
+                <a href="contact.html" class="btn-gold ml-4">Consultation</a>
+            </nav>
+            <div class="md:hidden text-gold text-2xl cursor-pointer" id="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/corporate.png'); background-size: cover; background-position: center; padding: 150px 0 80px; text-align: center; color: white;">
-        <div class="container">
-            <h1 style="color: white; font-size: 3rem;">Get In Touch</h1>
-            <p style="opacity: 0.8; letter-spacing: 2px; text-transform: uppercase;">Let's Plan Your Next Big Event</p>
+    <!-- Hero Section -->
+    <section class="relative h-[40vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=2074');"></div>
+        <div class="absolute inset-0 bg-navy/80"></div>
+        <div class="container relative z-10 text-center">
+            <h5 class="text-gold uppercase tracking-[5px] mb-4 reveal">Get In Touch</h5>
+            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">Contact Us</h1>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact-page">
+    <!-- Contact Content -->
+    <section class="bg-white">
         <div class="container">
-            <div class="contact-container">
-                <div class="contact-info reveal">
-                    <h2>Contact Details</h2>
-                    <p style="margin-bottom: 30px; color: var(--text-muted);">Planning an event? Contact us today and let our expert team make your event beautiful, organized, and memorable.</p>
+            <div class="grid md:grid-cols-2 gap-20">
+                
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h2 class="text-4xl mb-8 cinzel">Let's Build Something <span class="text-gold">Great</span> Together</h2>
+                    <p class="text-gray-500 mb-12 text-lg">Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
                     
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+91 XXXXXXXXXX</p>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold/10 flex items-center justify-center text-gold text-xl mr-6 flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Our Office</h4>
+                                <p class="text-gray-500">Luxury Plaza, Floor 12, Corporate Hub, Goa, India</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@yourcompany.com</p>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold/10 flex items-center justify-center text-gold text-xl mr-6 flex-shrink-0">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Email Address</h4>
+                                <p class="text-gray-500">contact@jashmiraaj.com</p>
+                                <p class="text-gray-500">support@jashmiraaj.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Address</h4>
-                            <p>Your City, Your State, India</p>
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-gold/10 flex items-center justify-center text-gold text-xl mr-6 flex-shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Mobile Number</h4>
+                                <p class="text-gray-500">+91 98765 43210</p>
+                                <p class="text-gray-500">+91 91234 56789</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="social-links" style="margin-top: 40px; display: flex; gap: 15px;">
-                        <a href="#" style="width: 40px; height: 40px; background: var(--dark); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" style="width: 40px; height: 40px; background: var(--dark); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="width: 40px; height: 40px; background: var(--dark); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- Socials -->
+                    <div class="mt-12">
+                        <h4 class="font-bold mb-6">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-navy hover:border-gold transition-all"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="w-10 h-10 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-navy hover:border-gold transition-all"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-navy hover:border-gold transition-all"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="w-10 h-10 border border-gray-200 flex items-center justify-center text-gray-400 hover:bg-gold hover:text-navy hover:border-gold transition-all"><i class="fab fa-youtube"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact-form-container reveal">
-                    <form id="enquiryForm" class="contact-form">
-                        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 0;">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Your Full Name" required>
+                <!-- Contact Form -->
+                <div class="reveal">
+                    <div class="glass border border-gold/10 p-10 shadow-2xl">
+                        <form id="contact-form" class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2">Full Name</label>
+                                    <input type="text" required class="w-full bg-softWhite border border-gray-200 px-4 py-3 outline-none focus:border-gold transition-all" placeholder="John Doe">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2">Email Address</label>
+                                    <input type="email" required class="w-full bg-softWhite border border-gray-200 px-4 py-3 outline-none focus:border-gold transition-all" placeholder="john@example.com">
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="mobile">Mobile Number</label>
-                                <input type="tel" id="mobile" name="mobile" class="form-control" placeholder="Phone Number" required>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2">Mobile Number</label>
+                                    <input type="tel" required class="w-full bg-softWhite border border-gray-200 px-4 py-3 outline-none focus:border-gold transition-all" placeholder="+91 00000 00000">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2">Service Required</label>
+                                    <select class="w-full bg-softWhite border border-gray-200 px-4 py-3 outline-none focus:border-gold transition-all">
+                                        <option>Business Consulting</option>
+                                        <option>Digital Marketing</option>
+                                        <option>Events Management</option>
+                                        <option>Product Branding</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
-                        </div>
-                        <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 0;">
-                            <div class="form-group">
-                                <label for="eventType">Event Type</label>
-                                <select id="eventType" name="eventType" class="form-control" required>
-                                    <option value="" disabled selected>Select Event Type</option>
-                                    <option value="Wedding">Wedding</option>
-                                    <option value="Birthday">Birthday Party</option>
-                                    <option value="Corporate">Corporate Event</option>
-                                    <option value="Product Launch">Product Launch</option>
-                                    <option value="Other">Other</option>
-                                </select>
+                            <div>
+                                <label class="block text-sm font-bold text-navy uppercase tracking-widest mb-2">Your Message</label>
+                                <textarea rows="5" required class="w-full bg-softWhite border border-gray-200 px-4 py-3 outline-none focus:border-gold transition-all" placeholder="How can we help you?"></textarea>
                             </div>
-                            <div class="form-group">
-                                <label for="eventDate">Event Date</label>
-                                <input type="date" id="eventDate" name="eventDate" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="budget">Budget</label>
-                            <input type="text" id="budget" name="budget" class="form-control" placeholder="Estimated Budget">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us more about your event..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry</button>
-                    </form>
+                            <button type="submit" class="btn-gold w-full text-lg py-4">Send Inquiry</button>
+                        </form>
+                    </div>
                 </div>
+
             </div>
         </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="p-0 h-[500px]">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123101.44686414772!2d73.74315266858172!3d15.49890251104646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfba106336b741%3A0xeaf887ffad285722!2sPanaji%2C%20Goa!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="#" class="logo">ELITE EVENTS</a>
-                    <p>We are a professional event management company dedicated to creating unforgettable experiences for our clients.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Wedding Planning</a></li>
-                        <li><a href="services.html">Corporate Events</a></li>
-                        <li><a href="services.html">Decorations</a></li>
-                        <li><a href="services.html">Catering</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Contact Us</h4>
-                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 10px;"><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> +91 XXXXXXXXXX</p>
-                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 10px;"><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> info@yourcompany.com</p>
-                    <p style="font-size: 0.9rem; opacity: 0.7;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Your City, India</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Elite Events. All Rights Reserved. Designed with Elegance.</p>
-            </div>
+    <footer class="bg-navy pt-10 pb-10 text-white">
+        <div class="container text-center">
+            <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAAJ</h2>
+            <p class="text-gray-500 mb-8">&copy; 2026 Jashmiraaj Ventures. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

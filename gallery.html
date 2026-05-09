@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Gallery | Jashmiraaj Ventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0D1230',
+                        gold: '#C8A46A',
+                        beige: '#D9BE8B',
+                        softWhite: '#F8F8F8',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+        .masonry {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) { .masonry { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry { column-count: 3; } }
+    </style>
+</head>
+<body class="bg-softWhite">
+
+    <!-- Header -->
+    <header id="main-header" class="scrolled">
+        <div class="container flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAAJ</a>
+            </div>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link active text-gold">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn-gold ml-4">Consultation</a>
+            </nav>
+            <div class="md:hidden text-gold text-2xl cursor-pointer" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative h-[40vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069');"></div>
+        <div class="absolute inset-0 bg-navy/80"></div>
+        <div class="container relative z-10 text-center">
+            <h5 class="text-gold uppercase tracking-[5px] mb-4 reveal">Our Portfolio</h5>
+            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">Work Gallery</h1>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="bg-white">
+        <div class="container">
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center space-x-4 md:space-x-8 mb-16 reveal">
+                <button class="text-gold border-b-2 border-gold pb-2 font-bold uppercase tracking-widest text-sm">All Work</button>
+                <button class="text-gray-400 hover:text-gold pb-2 font-bold uppercase tracking-widest text-sm transition-all">Events</button>
+                <button class="text-gray-400 hover:text-gold pb-2 font-bold uppercase tracking-widest text-sm transition-all">Marketing</button>
+                <button class="text-gray-400 hover:text-gold pb-2 font-bold uppercase tracking-widest text-sm transition-all">Branding</button>
+                <button class="text-gray-400 hover:text-gold pb-2 font-bold uppercase tracking-widest text-sm transition-all">Corporate</button>
+            </div>
+
+            <!-- Masonry Gallery -->
+            <div class="masonry reveal">
+                <!-- Item 1 -->
+                <div class="gallery-item group relative overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069" alt="Work" class="w-full h-auto transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">Grand Tech Expo</h4>
+                            <p class="text-gold text-sm uppercase">Events Management</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="gallery-item group relative overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2026" alt="Work" class="w-full h-auto transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">Retail Campaign</h4>
+                            <p class="text-gold text-sm uppercase">Digital Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="gallery-item group relative overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=2012" alt="Work" class="w-full h-auto transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">Product Launch</h4>
+                            <p class="text-gold text-sm uppercase">Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="gallery-item group relative overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=2069" alt="Work" class="w-full h-auto transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">Strategy Meet</h4>
+                            <p class="text-gold text-sm uppercase">Consulting</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="gallery-item group relative overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=2070" alt="Work" class="w-full h-auto transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">Brand Identity</h4>
+                            <p class="text-gold text-sm uppercase">Product Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 6 -->
+                <div class="gallery-item group relative overflow-hidden cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2070" alt="Work" class="w-full h-auto transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-navy/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <h4 class="text-xl font-bold mb-2">Corporate Gala</h4>
+                            <p class="text-gold text-sm uppercase">Events Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy pt-10 pb-10 text-white">
+        <div class="container text-center">
+            <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAAJ</h2>
+            <p class="text-gray-500 mb-8">&copy; 2026 Jashmiraaj Ventures. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

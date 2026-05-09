@@ -3,109 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Elite Events</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Us | Jashmiraaj Ventures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0D1230',
+                        gold: '#C8A46A',
+                        beige: '#D9BE8B',
+                        softWhite: '#F8F8F8',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-softWhite">
 
-    <!-- Navigation -->
-    <nav class="scrolled">
-        <div class="container">
-            <a href="index.html" class="logo">ELITE EVENTS</a>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a href="services.html">Services</a>
-                <a href="contact.html">Contact</a>
+    <!-- Header -->
+    <header id="main-header" class="scrolled">
+        <div class="container flex justify-between items-center">
+            <div class="logo">
+                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAAJ</a>
             </div>
-            <div class="mobile-toggle">
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active text-gold">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.html" class="btn-gold ml-4">Consultation</a>
+            </nav>
+            <div class="md:hidden text-gold text-2xl cursor-pointer" id="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Page Header -->
-    <section class="page-header" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/hero_banner.png'); background-size: cover; background-position: center; padding: 150px 0 80px; text-align: center; color: white;">
-        <div class="container">
-            <h1 style="color: white; font-size: 3rem;">About Our Company</h1>
-            <p style="opacity: 0.8; letter-spacing: 2px; text-transform: uppercase;">Creating Unforgettable Experiences</p>
+    <!-- Mobile Menu (Same as index) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-navy z-[2000] transform translate-x-full transition-transform duration-500 flex flex-col items-center justify-center space-y-8">
+        <div class="absolute top-8 right-8 text-gold text-3xl cursor-pointer" id="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="text-2xl text-white cinzel">Home</a>
+        <a href="about.html" class="text-2xl text-gold cinzel">About</a>
+        <a href="services.html" class="text-2xl text-white cinzel">Services</a>
+        <a href="gallery.html" class="text-2xl text-white cinzel">Gallery</a>
+        <a href="contact.html" class="text-2xl text-white cinzel">Contact</a>
+        <a href="contact.html" class="btn-gold">Get Consultation</a>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=2069');"></div>
+        <div class="absolute inset-0 bg-navy/70"></div>
+        <div class="container relative z-10 text-center">
+            <h5 class="text-gold uppercase tracking-[5px] mb-4 reveal">Discover Our Story</h5>
+            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">About Jashmiraaj Ventures</h1>
         </div>
     </section>
 
-    <!-- About Content -->
-    <section class="about-section">
+    <!-- Company Overview -->
+    <section class="bg-white">
+        <div class="container max-w-4xl text-center">
+            <h2 class="text-4xl mb-8 reveal">Empowering Brands with <span class="text-gold">Innovation</span> & Strategy</h2>
+            <p class="text-xl text-gray-600 mb-12 reveal leading-relaxed">Jashmiraaj Ventures is a modern business solutions company dedicated to helping brands achieve growth through consulting, marketing innovation, premium event management, and strategic branding.</p>
+            <p class="text-gray-500 reveal leading-relaxed">We combine creativity, strategy, and technology to deliver impactful business experiences and measurable results. Our team of experts works tirelessly to ensure your vision is transformed into a market-leading reality.</p>
+        </div>
+    </section>
+
+    <!-- Vision & Mission -->
+    <section class="bg-navy text-white">
+        <div class="container grid md:grid-cols-2 gap-12">
+            <div class="glass-dark p-12 reveal">
+                <div class="text-gold text-4xl mb-6"><i class="fas fa-eye"></i></div>
+                <h3 class="text-3xl mb-6 cinzel">Our Vision</h3>
+                <p class="text-gray-400 text-lg leading-relaxed">To become a trusted global business solutions brand known for innovation, creativity, and business excellence. We strive to set new benchmarks in the consulting and marketing industry.</p>
+            </div>
+            <div class="glass-dark p-12 reveal" style="transition-delay: 0.2s;">
+                <div class="text-gold text-4xl mb-6"><i class="fas fa-rocket"></i></div>
+                <h3 class="text-3xl mb-6 cinzel">Our Mission</h3>
+                <p class="text-gray-400 text-lg leading-relaxed">To empower businesses with strategic consulting, impactful branding, and innovative marketing solutions that create long-term growth and success for our partners worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="bg-softWhite">
         <div class="container">
-            <div class="contact-container">
-                <div class="about-image reveal">
-                    <img src="assets/decoration.png" alt="Event Decoration" style="border-radius: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+            <div class="text-center mb-16 reveal">
+                <h5 class="text-gold uppercase tracking-widest mb-4">Our DNA</h5>
+                <h2 class="text-4xl md:text-5xl">Core <span class="text-gold">Values</span></h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+                <div class="reveal">
+                    <div class="text-gold text-3xl mb-4"><i class="fas fa-lightbulb"></i></div>
+                    <h4 class="font-bold">Innovation</h4>
                 </div>
-                <div class="about-text reveal">
-                    <h2 style="margin-bottom: 20px;">Dedicated to Perfection</h2>
-                    <p style="margin-bottom: 20px;">We are a professional event management company dedicated to creating unforgettable experiences for our clients. Whether it is a wedding, birthday party, corporate event, product launch, exhibition, or private celebration, we manage everything from planning to final execution.</p>
-                    <p>Our team focuses on creativity, quality, time management, and client satisfaction. We believe every event has a story, and our job is to make that story beautiful, organized, and memorable.</p>
+                <div class="reveal" style="transition-delay: 0.1s;">
+                    <div class="text-gold text-3xl mb-4"><i class="fas fa-shield-alt"></i></div>
+                    <h4 class="font-bold">Integrity</h4>
+                </div>
+                <div class="reveal" style="transition-delay: 0.2s;">
+                    <div class="text-gold text-3xl mb-4"><i class="fas fa-paint-brush"></i></div>
+                    <h4 class="font-bold">Creativity</h4>
+                </div>
+                <div class="reveal" style="transition-delay: 0.3s;">
+                    <div class="text-gold text-3xl mb-4"><i class="fas fa-handshake"></i></div>
+                    <h4 class="font-bold">Commitment</h4>
+                </div>
+                <div class="reveal" style="transition-delay: 0.4s;">
+                    <div class="text-gold text-3xl mb-4"><i class="fas fa-trophy"></i></div>
+                    <h4 class="font-bold">Excellence</h4>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <section class="mission-vision" style="background-color: var(--dark); color: white;">
+    <!-- Team Section -->
+    <section class="bg-white">
         <div class="container">
-            <div class="grid">
-                <div class="feature-card reveal" style="background: var(--dark-light); border: 1px solid var(--glass-border);">
-                    <i class="fas fa-bullseye" style="color: var(--primary);"></i>
-                    <h3 style="color: white;">Our Mission</h3>
-                    <p style="color: rgba(255,255,255,0.7);">To provide creative, reliable, and affordable event management services that make every celebration stress-free and memorable.</p>
+            <div class="text-center mb-16 reveal">
+                <h5 class="text-gold uppercase tracking-widest mb-4">The Experts</h5>
+                <h2 class="text-4xl md:text-5xl">Meet Our <span class="text-gold">Professionals</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Team 1 -->
+                <div class="group reveal">
+                    <div class="relative overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1974" alt="Team" class="w-full h-[400px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Rajesh Vardhan</h4>
+                    <p class="text-gold uppercase tracking-widest text-xs mb-4">Founder & CEO</p>
+                    <div class="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
-                <div class="feature-card reveal" style="background: var(--dark-light); border: 1px solid var(--glass-border);">
-                    <i class="fas fa-eye" style="color: var(--primary);"></i>
-                    <h3 style="color: white;">Our Vision</h3>
-                    <p style="color: rgba(255,255,255,0.7);">To become a trusted event management brand known for premium planning, professional execution, and unique event experiences.</p>
+                <!-- Team 2 -->
+                <div class="group reveal" style="transition-delay: 0.2s;">
+                    <div class="relative overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1976" alt="Team" class="w-full h-[400px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Priya Sharma</h4>
+                    <p class="text-gold uppercase tracking-widest text-xs mb-4">Creative Director</p>
+                    <div class="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <!-- Team 3 -->
+                <div class="group reveal" style="transition-delay: 0.4s;">
+                    <div class="relative overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=1974" alt="Team" class="w-full h-[400px] object-cover grayscale group-hover:grayscale-0 transition-all duration-700">
+                        <div class="absolute bottom-0 left-0 w-full h-1 bg-gold transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-2">Vikram Malhotra</h4>
+                    <p class="text-gold uppercase tracking-widest text-xs mb-4">Marketing Head</p>
+                    <div class="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <a href="#" class="logo">ELITE EVENTS</a>
-                    <p>We are a professional event management company dedicated to creating unforgettable experiences for our clients.</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html">Wedding Planning</a></li>
-                        <li><a href="services.html">Corporate Events</a></li>
-                        <li><a href="services.html">Decorations</a></li>
-                        <li><a href="services.html">Catering</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Contact Us</h4>
-                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 10px;"><i class="fas fa-phone" style="color: var(--primary); margin-right: 10px;"></i> +91 XXXXXXXXXX</p>
-                    <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 10px;"><i class="fas fa-envelope" style="color: var(--primary); margin-right: 10px;"></i> info@yourcompany.com</p>
-                    <p style="font-size: 0.9rem; opacity: 0.7;"><i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 10px;"></i> Your City, India</p>
+    <!-- Footer (Same as index) -->
+    <footer class="bg-navy border-t border-white/5 pt-20 pb-10">
+        <div class="container grid md:grid-cols-4 gap-12 mb-20 text-white">
+            <!-- Footer Content truncated for brevity in this step, but will include full footer -->
+            <div class="col-span-1">
+                <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAAJ</h2>
+                <p class="text-gray-400">Premium consulting and marketing company specializing in strategic growth solutions.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="text-gold">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Legal</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
+                <div class="flex">
+                    <input type="email" placeholder="Email Address" class="bg-white/5 border border-white/10 px-4 py-2 w-full outline-none">
+                    <button class="bg-gold px-4 text-navy"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Elite Events. All Rights Reserved. Designed with Elegance.</p>
-            </div>
+        </div>
+        <div class="container border-t border-white/5 pt-10 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Jashmiraaj Ventures. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
