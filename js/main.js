@@ -102,14 +102,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Global Reveal (Excluding Hero Slider)
         const reveals = document.querySelectorAll('.reveal:not(.slide-content .reveal)');
         reveals.forEach(el => {
-            gsap.from(el, {
+            gsap.to(el, {
                 scrollTrigger: {
                     trigger: el,
                     start: "top 85%",
                     toggleActions: "play none none none"
                 },
-                y: 50,
-                opacity: 0,
+                y: 0,
+                opacity: 1,
                 duration: 1.2,
                 ease: "power3.out"
             });
