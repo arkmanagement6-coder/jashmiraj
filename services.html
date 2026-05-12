@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Jashmiraaj Ventures</title>
+    <title>Our Services | Jashmiraj Ventures Pvt. Ltd.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,11 +24,16 @@
 </head>
 <body class="bg-softWhite">
 
+    <!-- Preloader -->
+    <div id="loader" class="fixed inset-0 z-[9999] bg-navy flex items-center justify-center">
+        <div class="w-20 h-20 border-4 border-gold border-t-transparent rounded-full animate-spin"></div>
+    </div>
+
     <!-- Header -->
     <header id="main-header" class="scrolled">
         <div class="container flex justify-between items-center">
             <div class="logo">
-                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAAJ</a>
+                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAJ</a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="index.html" class="nav-link">Home</a>
@@ -44,13 +49,26 @@
         </div>
     </header>
 
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-navy z-[2000] transform translate-x-full transition-transform duration-500 flex flex-col items-center justify-center space-y-8">
+        <div class="absolute top-8 right-8 text-gold text-3xl cursor-pointer" id="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <a href="index.html" class="text-2xl text-white cinzel">Home</a>
+        <a href="about.html" class="text-2xl text-white cinzel">About</a>
+        <a href="services.html" class="text-2xl text-gold cinzel">Services</a>
+        <a href="gallery.html" class="text-2xl text-white cinzel">Gallery</a>
+        <a href="contact.html" class="text-2xl text-white cinzel">Contact</a>
+        <a href="contact.html" class="btn-gold">Get Consultation</a>
+    </div>
+
     <!-- Hero Section -->
     <section class="relative h-[50vh] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2070');"></div>
         <div class="absolute inset-0 bg-navy/80"></div>
         <div class="container relative z-10 text-center">
-            <h5 class="text-gold uppercase tracking-[5px] mb-4 reveal">Premium Solutions</h5>
-            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">Our Services</h1>
+            <h5 class="text-gold uppercase tracking-[5px] mb-4 reveal">Integrated Execution</h5>
+            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">Our Expertise</h1>
         </div>
     </section>
 
@@ -58,101 +76,128 @@
     <section class="bg-white">
         <div class="container space-y-32">
             
-            <!-- Service 1 -->
+            <!-- Service 1: Technology -->
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="reveal">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=2070" alt="Consulting" class="w-full h-[500px] object-cover shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2026" alt="Technology" class="w-full h-[500px] object-cover shadow-2xl">
                 </div>
                 <div class="reveal">
                     <h5 class="text-gold uppercase tracking-widest mb-4">Service 01</h5>
-                    <h2 class="text-4xl mb-6">Business Consulting</h2>
-                    <p class="text-gray-600 mb-8 text-lg">We provide strategic consulting services to help businesses scale efficiently and achieve sustainable growth. Our experts analyze your market position and create a roadmap for long-term success.</p>
+                    <h2 class="text-4xl mb-6">Technology Solutions</h2>
+                    <p class="text-gray-600 mb-8 text-lg">We build modern digital foundations for businesses, including custom websites, mobile applications, and automation systems that simplify operations and drive growth.</p>
                     <div class="grid grid-cols-2 gap-6 mb-10">
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Business Planning</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Startup Strategy</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Growth Strategy</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Market Research</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Web Development</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Mobile Apps</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Software Solutions</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Business Automation</div>
                     </div>
-                    <a href="contact.html" class="btn-gold">Request Consultation</a>
+                    <a href="contact.html" class="btn-gold">Discuss Tech Needs</a>
                 </div>
             </div>
 
-            <!-- Service 2 -->
+            <!-- Service 2: Marketing -->
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="reveal order-2 md:order-1">
                     <h5 class="text-gold uppercase tracking-widest mb-4">Service 02</h5>
-                    <h2 class="text-4xl mb-6">Digital Marketing</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Grow your business online with our performance-driven digital marketing solutions. We focus on high ROI campaigns that increase your brand visibility and generate quality leads.</p>
+                    <h2 class="text-4xl mb-6">Marketing & Branding</h2>
+                    <p class="text-gray-600 mb-8 text-lg">Our data-driven marketing strategies bridge the gap between your brand and your customers. From performance marketing to visual identity, we ensure your message is heard.</p>
                     <div class="grid grid-cols-2 gap-6 mb-10">
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Meta Ads</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Google Ads</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> SEO Optimization</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Content Marketing</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Digital Marketing</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Social Media</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Brand Identity</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> SEO & SEM</div>
                     </div>
-                    <a href="contact.html" class="btn-gold">Start Marketing</a>
+                    <a href="contact.html" class="btn-gold">Start Your Campaign</a>
                 </div>
                 <div class="reveal order-1 md:order-2">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2026" alt="Marketing" class="w-full h-[500px] object-cover shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=2070" alt="Marketing" class="w-full h-[500px] object-cover shadow-2xl">
                 </div>
             </div>
 
-            <!-- Service 3 -->
+            <!-- Service 3: Workforce -->
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="reveal">
-                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069" alt="Events" class="w-full h-[500px] object-cover shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&q=80&w=1974" alt="Workforce" class="w-full h-[500px] object-cover shadow-2xl">
                 </div>
                 <div class="reveal">
                     <h5 class="text-gold uppercase tracking-widest mb-4">Service 03</h5>
-                    <h2 class="text-4xl mb-6">Events Management</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Professional event management solutions for corporate events, product launches, exhibitions, and business conferences. We handle everything from concept to completion.</p>
+                    <h2 class="text-4xl mb-6">Workforce & Operations</h2>
+                    <p class="text-gray-600 mb-8 text-lg">We manage the people and processes that drive your business. Our workforce solutions include recruitment, staffing, and field team management across India.</p>
                     <div class="grid grid-cols-2 gap-6 mb-10">
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Corporate Events</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Product Launches</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Brand Promotions</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Celebrity Mgmt</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Recruitment</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Field Teams</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Logistics Mgmt</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Operations Support</div>
                     </div>
-                    <a href="contact.html" class="btn-gold">Book an Event</a>
+                    <a href="contact.html" class="btn-gold">Optimize Operations</a>
                 </div>
             </div>
 
-            <!-- Service 4 -->
+            <!-- Service 4: Events -->
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="reveal order-2 md:order-1">
                     <h5 class="text-gold uppercase tracking-widest mb-4">Service 04</h5>
-                    <h2 class="text-4xl mb-6">Product Branding</h2>
-                    <p class="text-gray-600 mb-8 text-lg">Build a memorable brand identity with powerful branding and creative design solutions. We help you stand out in the marketplace with a unique visual language.</p>
+                    <h2 class="text-4xl mb-6">Events & Activations</h2>
+                    <p class="text-gray-600 mb-8 text-lg">From massive corporate summits to ground-level brand activations, we create experiences that resonate. Our execution ensures every detail reflects your brand's excellence.</p>
                     <div class="grid grid-cols-2 gap-6 mb-10">
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Brand Identity</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Packaging Design</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Logo & Visuals</div>
-                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Creative Strategy</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Corporate Events</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Product Launches</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Ground Campaigns</div>
+                        <div class="flex items-center text-gray-500"><i class="fas fa-check-circle text-gold mr-3"></i> Brand Activation</div>
                     </div>
-                    <a href="contact.html" class="btn-gold">Get Branded</a>
+                    <a href="contact.html" class="btn-gold">Plan Your Event</a>
                 </div>
                 <div class="reveal order-1 md:order-2">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=2012" alt="Branding" class="w-full h-[500px] object-cover shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069" alt="Events" class="w-full h-[500px] object-cover shadow-2xl">
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- CTA -->
-    <section class="bg-navy py-20">
-        <div class="container text-center">
-            <h2 class="text-white text-4xl mb-8 reveal">Need a <span class="text-gold">Custom</span> Solution?</h2>
-            <p class="text-gray-400 mb-12 max-w-2xl mx-auto reveal">Our team is ready to discuss your specific business needs and create a tailored strategy for your success.</p>
-            <a href="contact.html" class="btn-gold text-lg px-12 py-4 reveal">Talk to an Expert</a>
+    <!-- Footer -->
+    <footer class="bg-navy border-t border-white/5 pt-20 pb-10">
+        <div class="container grid md:grid-cols-4 gap-12 mb-20 text-white">
+            <div class="col-span-1">
+                <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAJ</h2>
+                <p class="text-gray-400">Multi-industry execution powerhouse delivering integrated business solutions across India.</p>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html" class="text-gold">Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Expertise</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li>Technology Solutions</li>
+                    <li>Marketing & Branding</li>
+                    <li>Events & Activations</li>
+                    <li>Workforce & Operations</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Contact Info</h4>
+                <p class="text-gray-400 text-sm">contact@jashmiraj.com</p>
+                <div class="flex mt-6">
+                    <input type="email" placeholder="Email Address" class="bg-white/5 border border-white/10 px-4 py-2 w-full outline-none text-sm">
+                    <button class="bg-gold px-4 text-navy"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <!-- Footer Truncated -->
-    <footer class="bg-navy border-t border-white/5 pt-20 pb-10 text-white">
-        <div class="container text-center">
-            <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAAJ</h2>
-            <p class="text-gray-500 mb-8">&copy; 2026 Jashmiraaj Ventures. All Rights Reserved.</p>
+        <div class="container border-t border-white/5 pt-10 text-center text-gray-500 text-sm">
+            <p>&copy; 2026 Jashmiraj Ventures Pvt. Ltd. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>

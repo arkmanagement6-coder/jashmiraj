@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | Jashmiraaj Ventures</title>
+    <title>About Us | Jashmiraj Ventures Pvt. Ltd.</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -24,11 +24,16 @@
 </head>
 <body class="bg-softWhite">
 
+    <!-- Preloader -->
+    <div id="loader" class="fixed inset-0 z-[9999] bg-navy flex items-center justify-center">
+        <div class="w-20 h-20 border-4 border-gold border-t-transparent rounded-full animate-spin"></div>
+    </div>
+
     <!-- Header -->
     <header id="main-header" class="scrolled">
         <div class="container flex justify-between items-center">
             <div class="logo">
-                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAAJ</a>
+                <a href="index.html" class="text-3xl font-bold cinzel text-gold tracking-widest">JASHMIRAJ</a>
             </div>
             <nav class="hidden md:flex space-x-8 items-center">
                 <a href="index.html" class="nav-link">Home</a>
@@ -44,7 +49,7 @@
         </div>
     </header>
 
-    <!-- Mobile Menu (Same as index) -->
+    <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-navy z-[2000] transform translate-x-full transition-transform duration-500 flex flex-col items-center justify-center space-y-8">
         <div class="absolute top-8 right-8 text-gold text-3xl cursor-pointer" id="close-menu">
             <i class="fas fa-times"></i>
@@ -63,16 +68,52 @@
         <div class="absolute inset-0 bg-navy/70"></div>
         <div class="container relative z-10 text-center">
             <h5 class="text-gold uppercase tracking-[5px] mb-4 reveal">Discover Our Story</h5>
-            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">About Jashmiraaj Ventures</h1>
+            <h1 class="text-5xl md:text-7xl text-white cinzel reveal">About Jashmiraj Ventures</h1>
         </div>
     </section>
 
     <!-- Company Overview -->
     <section class="bg-white">
         <div class="container max-w-4xl text-center">
-            <h2 class="text-4xl mb-8 reveal">Empowering Brands with <span class="text-gold">Innovation</span> & Strategy</h2>
-            <p class="text-xl text-gray-600 mb-12 reveal leading-relaxed">Jashmiraaj Ventures is a modern business solutions company dedicated to helping brands achieve growth through consulting, marketing innovation, premium event management, and strategic branding.</p>
-            <p class="text-gray-500 reveal leading-relaxed">We combine creativity, strategy, and technology to deliver impactful business experiences and measurable results. Our team of experts works tirelessly to ensure your vision is transformed into a market-leading reality.</p>
+            <h2 class="text-4xl mb-8 reveal">Executing Ideas Into <span class="text-gold">Real Business Growth</span></h2>
+            <p class="text-xl text-gray-600 mb-12 reveal leading-relaxed">Jashmiraj Ventures Pvt. Ltd. is a multi-industry execution powerhouse delivering integrated on-ground and digital business solutions across India. We help brands, startups, organizations, and enterprises grow through strategic execution, technology, manpower, events, marketing, and operational support.</p>
+            <p class="text-gray-500 reveal leading-relaxed mb-8">From digital transformation to field-level execution, we provide end-to-end business solutions under one roof. We Are More Than Just a Digital Agency — We execute real-world growth.</p>
+            <div class="inline-block glass p-8 border border-gold/20">
+                <h3 class="text-2xl font-bold text-navy mb-2">Brand Statement</h3>
+                <p class="text-xl text-gold italic">“One Partner. Infinite Possibilities.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="bg-softWhite">
+        <div class="container">
+            <div class="text-center mb-16 reveal">
+                <h5 class="text-gold uppercase tracking-widest mb-4">Our Expertise</h5>
+                <h2 class="text-4xl md:text-5xl">Integrated <span class="text-gold">Solutions</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass p-8 border-t-4 border-gold reveal">
+                    <h4 class="text-xl font-bold mb-4">Technology Solutions</h4>
+                    <p class="text-gray-500 text-sm">Websites, Mobile Applications, Software, Automation & Digital Platforms</p>
+                </div>
+                <div class="glass p-8 border-t-4 border-gold reveal" style="transition-delay: 0.1s;">
+                    <h4 class="text-xl font-bold mb-4">Marketing & Branding</h4>
+                    <p class="text-gray-500 text-sm">Digital Marketing, Social Media Campaigns, Brand Promotions & Performance Marketing</p>
+                </div>
+                <div class="glass p-8 border-t-4 border-gold reveal" style="transition-delay: 0.2s;">
+                    <h4 class="text-xl font-bold mb-4">Events & Activations</h4>
+                    <p class="text-gray-500 text-sm">Corporate Events, Product Launches, Promotional Activities & Ground Campaigns</p>
+                </div>
+                <div class="glass p-8 border-t-4 border-gold reveal" style="transition-delay: 0.3s;">
+                    <h4 class="text-xl font-bold mb-4">Workforce & Operations</h4>
+                    <p class="text-gray-500 text-sm">Recruitment, Staffing, Field Teams, Logistics & Execution Management</p>
+                </div>
+                <div class="glass p-8 border-t-4 border-gold reveal" style="transition-delay: 0.4s;">
+                    <h4 class="text-xl font-bold mb-4">Consulting & Support</h4>
+                    <p class="text-gray-500 text-sm">Strategic Planning, Business Expansion & Operational Execution</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -82,44 +123,19 @@
             <div class="glass-dark p-12 reveal">
                 <div class="text-gold text-4xl mb-6"><i class="fas fa-eye"></i></div>
                 <h3 class="text-3xl mb-6 cinzel">Our Vision</h3>
-                <p class="text-gray-400 text-lg leading-relaxed">To become a trusted global business solutions brand known for innovation, creativity, and business excellence. We strive to set new benchmarks in the consulting and marketing industry.</p>
+                <p class="text-gray-400 text-lg leading-relaxed mb-6">To become India’s most trusted multi-service execution company by empowering businesses with technology, workforce, innovation, and scalable growth solutions.</p>
+                <p class="text-gray-500 text-sm">We envision a future where businesses no longer need multiple vendors for different operations — one powerful partner can manage everything efficiently.</p>
             </div>
             <div class="glass-dark p-12 reveal" style="transition-delay: 0.2s;">
                 <div class="text-gold text-4xl mb-6"><i class="fas fa-rocket"></i></div>
                 <h3 class="text-3xl mb-6 cinzel">Our Mission</h3>
-                <p class="text-gray-400 text-lg leading-relaxed">To empower businesses with strategic consulting, impactful branding, and innovative marketing solutions that create long-term growth and success for our partners worldwide.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Values -->
-    <section class="bg-softWhite">
-        <div class="container">
-            <div class="text-center mb-16 reveal">
-                <h5 class="text-gold uppercase tracking-widest mb-4">Our DNA</h5>
-                <h2 class="text-4xl md:text-5xl">Core <span class="text-gold">Values</span></h2>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
-                <div class="reveal">
-                    <div class="text-gold text-3xl mb-4"><i class="fas fa-lightbulb"></i></div>
-                    <h4 class="font-bold">Innovation</h4>
-                </div>
-                <div class="reveal" style="transition-delay: 0.1s;">
-                    <div class="text-gold text-3xl mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h4 class="font-bold">Integrity</h4>
-                </div>
-                <div class="reveal" style="transition-delay: 0.2s;">
-                    <div class="text-gold text-3xl mb-4"><i class="fas fa-paint-brush"></i></div>
-                    <h4 class="font-bold">Creativity</h4>
-                </div>
-                <div class="reveal" style="transition-delay: 0.3s;">
-                    <div class="text-gold text-3xl mb-4"><i class="fas fa-handshake"></i></div>
-                    <h4 class="font-bold">Commitment</h4>
-                </div>
-                <div class="reveal" style="transition-delay: 0.4s;">
-                    <div class="text-gold text-3xl mb-4"><i class="fas fa-trophy"></i></div>
-                    <h4 class="font-bold">Excellence</h4>
-                </div>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="flex items-start"><i class="fas fa-check text-gold mr-3 mt-1"></i> To deliver result-driven business solutions with excellence</li>
+                    <li class="flex items-start"><i class="fas fa-check text-gold mr-3 mt-1"></i> To bridge the gap between digital strategy and on-ground execution</li>
+                    <li class="flex items-start"><i class="fas fa-check text-gold mr-3 mt-1"></i> To create scalable growth opportunities for businesses</li>
+                    <li class="flex items-start"><i class="fas fa-check text-gold mr-3 mt-1"></i> To provide reliable manpower and technology support</li>
+                    <li class="flex items-start"><i class="fas fa-check text-gold mr-3 mt-1"></i> To build long-term partnerships through trust and quality</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -140,10 +156,6 @@
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Rajesh Vardhan</h4>
                     <p class="text-gold uppercase tracking-widest text-xs mb-4">Founder & CEO</p>
-                    <div class="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-twitter"></i></a>
-                    </div>
                 </div>
                 <!-- Team 2 -->
                 <div class="group reveal" style="transition-delay: 0.2s;">
@@ -153,10 +165,6 @@
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Priya Sharma</h4>
                     <p class="text-gold uppercase tracking-widest text-xs mb-4">Creative Director</p>
-                    <div class="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-instagram"></i></a>
-                    </div>
                 </div>
                 <!-- Team 3 -->
                 <div class="group reveal" style="transition-delay: 0.4s;">
@@ -166,22 +174,17 @@
                     </div>
                     <h4 class="text-2xl font-bold mb-2">Vikram Malhotra</h4>
                     <p class="text-gold uppercase tracking-widest text-xs mb-4">Marketing Head</p>
-                    <div class="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-gold"><i class="fab fa-twitter"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer (Same as index) -->
+    <!-- Footer -->
     <footer class="bg-navy border-t border-white/5 pt-20 pb-10">
         <div class="container grid md:grid-cols-4 gap-12 mb-20 text-white">
-            <!-- Footer Content truncated for brevity in this step, but will include full footer -->
             <div class="col-span-1">
-                <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAAJ</h2>
-                <p class="text-gray-400">Premium consulting and marketing company specializing in strategic growth solutions.</p>
+                <h2 class="text-2xl cinzel text-gold mb-6">JASHMIRAJ</h2>
+                <p class="text-gray-400">Multi-industry execution powerhouse delivering integrated business solutions across India.</p>
             </div>
             <div>
                 <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
@@ -192,22 +195,25 @@
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Legal</h4>
-                <ul class="space-y-4 text-gray-400">
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Expertise</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li>Technology Solutions</li>
+                    <li>Marketing & Branding</li>
+                    <li>Events & Activations</li>
+                    <li>Workforce & Operations</li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Newsletter</h4>
-                <div class="flex">
-                    <input type="email" placeholder="Email Address" class="bg-white/5 border border-white/10 px-4 py-2 w-full outline-none">
+                <h4 class="font-bold mb-6 uppercase tracking-widest text-sm">Contact</h4>
+                <p class="text-gray-400 text-sm">contact@jashmiraj.com</p>
+                <div class="flex mt-6">
+                    <input type="email" placeholder="Email Address" class="bg-white/5 border border-white/10 px-4 py-2 w-full outline-none text-sm">
                     <button class="bg-gold px-4 text-navy"><i class="fas fa-paper-plane"></i></button>
                 </div>
             </div>
         </div>
         <div class="container border-t border-white/5 pt-10 text-center text-gray-500 text-sm">
-            <p>&copy; 2026 Jashmiraaj Ventures. All Rights Reserved.</p>
+            <p>&copy; 2026 Jashmiraj Ventures Pvt. Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 

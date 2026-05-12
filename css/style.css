@@ -125,6 +125,11 @@ section {
 
 /* Animations */
 .reveal {
+    opacity: 1;
+    transform: none;
+}
+
+.js-enabled .reveal {
     opacity: 0;
     transform: translateY(30px);
 }
