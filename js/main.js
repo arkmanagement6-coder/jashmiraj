@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (loader) {
             gsap.to(loader, {
                 opacity: 0,
-                duration: 0.5,
+                duration: 0.3,
                 onComplete: () => {
                     loader.style.display = 'none';
                     initAnimations();
@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const elements = content.querySelectorAll('.reveal');
         
         gsap.fromTo(elements, 
-            { y: 30, opacity: 0 },
-            { y: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power3.out" }
+            { y: 20, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.5, stagger: 0.1, ease: "power2.out" }
         );
     }
 
@@ -110,8 +110,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 y: 0,
                 opacity: 1,
-                duration: 1.2,
-                ease: "power3.out"
+                duration: 0.6,
+                ease: "power2.out"
             });
         });
 
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     start: "top 90%"
                 },
                 innerText: target,
-                duration: 2,
+                duration: 1.5,
                 snap: { innerText: 1 },
                 ease: "power2.out"
             });
